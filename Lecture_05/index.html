@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        img{
+            margin: 10px;
+        }
+        /* .poster2{
+            position: relative;
+            top: 50px;  
+            left:50px;
+        } */
+        /* .poster1{
+            position: absolute;
+            top: 50px;
+        }
+        .container{
+            position: relative;
+        } */
+       /* .image1{
+        position: fixed;
+        top: 200px;
+       }
+       .image2{
+        position: sticky;
+        top: 50px;
+       } */
+    </style>
+</head>
+<body>
+    <h1>CSS Position Property</h1>
+    <p>
+        By default static postion property is applied to element we cant change any position of element.
+        The position CSS property sets how an elements is positioned in a document.
+        The Top,Right,Bottom,and left properties determine the final location of positioned element.
+    </p>
+    <div class="container">
+        <!-- Image tag is an inline tag because it comes next to each other -->
+        <img src="poster1.webp" alt="poster1" width="300px" height="300px" class="image1">
+        <img src="poster2.webp" alt="poster1" width="300px" height="300px" class="image2">
+        <!-- Using position relative we set the property of element to left right top and bottom and every element take position according to current window.-->
+        <!-- An element with position: absolute; is positioned relative to the nearest positioned ancestor (with position other than static).
+        However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+        Note: Absolute positioned elements are removed from the normal document flow, and can overlap other elements. -->
+    </div>
+</body>
+
+</html>
